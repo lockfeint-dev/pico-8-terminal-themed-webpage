@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "PICO-8 Mono";
+  src: url("../assets/fonts/pico-8-mono/pico-8-mono.otf.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 p,
 h2,
@@ -6,24 +13,24 @@ figure {
 }
 
 :root {
-  --text-font-family: "JetBrains Mono", monospace;
-  --text-font-size: 15.63px;
-  --text-line-height: 1.2;
-  --text-transform: initial;
+  --text-font-family: "PICO-8 Mono", monospace;
+  --text-font-size: 16px;
+  --text-line-height: 2;
+  --text-transform: lowercase;
   --layer-bg-color: #433f3eff;
-  --text-color: #d0c4ba;
-  --link-color: #d0c4ba;
-  --link-hover-color: #f54e56;
+  --text-color: #ccc;
+  --link-color: #ccc;
+  --link-hover-color: #f69;
   --fastfetch-title-color: #f54e56;
   --fastfetch-key-color: #f54e56;
-  --markdown-header-bg-color: #9777e8ff;
-  --markdown-header-text-color: #e8d7ff;
-  --ls-permissions-color: #c0bdbf;
-  --ls-user-color: #f8d35c;
-  --ls-datetime-color: #0094d4;
-  --ls-filename-color: white;
-  --terminal-path-text-color: #e8d7ff;
-  --terminal-input-text-color: #9777e8;
+  --markdown-header-bg-color: #f69;
+  --markdown-header-text-color: white;
+  --ls-permissions-color: #ccc;
+  --ls-user-color: #fc3;
+  --ls-datetime-color: #7cf;
+  --ls-filename-color: #fab;
+  --terminal-path-text-color: #f7a;
+  --terminal-input-text-color: white;
   --terminal-cursor-color: white;
 }
 
