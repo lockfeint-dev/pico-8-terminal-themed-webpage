@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>~:fish - My Website</title>
+    <title>~:fish - PICO-8 Games</title>
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex, nofollow, noarchive" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f54e56" />
-    <meta name="description" content="Welcome to my website" />
-    <meta property="og:title" content="My Website" />
-    <meta property="og:description" content="Welcome to my website" />
+    <meta name="description" content="Making pixel art games" />
+    <meta property="og:title" content="PICO-8 Games" />
+    <meta property="og:description" content="Making pixel art games" />
     <meta property="og:image" content="./assets/cover.png" />
     <meta property="og:type" content="website" />
-    <link rel="icon" type="image/svg+xml" href="./assets/icon.png" />
+    <link rel="icon" type="image/svg+xml" href="./assets/pico-8-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +22,7 @@
   </head>
   <body>
     <main>
-      <article>
+      <!-- <article>
         <section class="terminal-line">
           <p class="terminal-path">~</p>
         </section>
@@ -85,36 +85,42 @@
             </p>
           </section>
         </section>
-      </article>
+      </article> -->
 
       <article>
-        <section class="terminal-line fade-before">
-          <p class="terminal-path">~/Documents</p>
+        <section class="terminal-line">
+          <p class="terminal-path">~</p>
         </section>
         <section class="terminal-line typewriter">
           <p>
             <span class="terminal-input">&gt;</span>
-            <span class="terminal-command">glow ABOUTME.md</span>
+            <span class="terminal-command">cd Carts</span>
+          </p>
+        </section>
+        <section class="terminal-command-output" />
+      </article>
+
+      <article>
+        <section class="terminal-line fade-before">
+          <p class="terminal-path">~/Carts</p>
+        </section>
+        <section class="terminal-line typewriter">
+          <p>
+            <span class="terminal-input">&gt;</span>
+            <span class="terminal-command">glow README.md</span>
           </p>
         </section>
         <section class="terminal-command-output markdown-output fade-after">
-          <h2>About Me</h2>
+          <h2>Instructions</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. <br /><br />
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            Select a game from the list below, then click the Play button to begin.
           </p>
         </section>
       </article>
 
       <article>
         <section class="terminal-line fade-before">
-          <p class="terminal-path">~/Documents</p>
+          <p class="terminal-path">~/Carts</p>
         </section>
         <section class="terminal-line typewriter">
           <p>
@@ -123,24 +129,12 @@
           </p>
         </section>
         <section class="terminal-command-output ls-output fade-after">
-          <ul>
+          <ul id="pico-8-cart-list">
             <li>
               <span class="ls-permissions">.r--r--r--</span> -
               <span class="ls-user">user</span>
               <span class="ls-datetime">03 May 17:55</span>
-              <span class="ls-filename">ABOUTME.md</a>
-            </li>
-            <li>
-              <span class="ls-permissions">.r--r--r--</span> -
-              <span class="ls-user">user</span>
-              <span class="ls-datetime">03 May 17:55</span>
-              <a class="ls-filename" href="assets/cover.png">cover.png</a>
-            </li>
-            <li>
-              <span class="ls-permissions">.r--r--r--</span> -
-              <span class="ls-user">user</span>
-              <span class="ls-datetime">03 May 17:55</span>
-              <a class="ls-filename" href="assets/icon.png">icon.png</a>
+              <span class="ls-filename">README.md</a>
             </li>
           </ul>
         </section>
@@ -148,7 +142,7 @@
 
       <article class="fade-before">
         <section class="terminal-line">
-          <p class="terminal-path">~/Documents</p>
+          <p class="terminal-path">~/Carts</p>
         </section>
         <section class="terminal-line terminal-cursor">
           <p>
@@ -157,5 +151,7 @@
         </section>
       </article>
     </main>
+
+    <script src="./js/pico-8-cart-list.js"></script>
   </body>
 </html>
